@@ -2,6 +2,7 @@
   <div>
     <button @click="toggleMessage">Show/Hide</button>
     <p v-if="showMessage">{{ message }}</p>
+    <p>{{message2}}</p>
   </div>
 </template>
 
@@ -11,6 +12,7 @@ export default {
     return {
       message: "I don't even know you, Vue...",
       showMessage: true,
+      message2: "I'm starting to get the hang of this...!"
     };
   },
   methods: {
